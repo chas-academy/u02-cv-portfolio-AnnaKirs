@@ -1,0 +1,75 @@
+.body {
+    margin: 0;
+}
+
+.page-container {
+    max-width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*background: linear-gradient(to bottom, #4e0011, #8eb9ff);*/
+    /*margin-left: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;*/
+}
+
+.header-container {
+    background-size: 100% 100%;
+    background-color: #4e0011;
+    background-image: url(/Resources/IMG_0319.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply; /*takes the dark background color and lays on top "lighten" for lighter colors*/
+    color: #8eb9ff;
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    padding-left: 15vw;
+    border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%;
+    font-size: 2vw;
+}
+
+h1 {
+    padding-bottom: 4vh;
+}
+
+.status-button {
+    background-color: #8eb9ff;
+    color:#4e0011;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    &:hover {
+        background-color: #b6cffb;
+    }
+    text-align: left;
+}
+
+.status-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+  @media screen and (max-width: 992px) {
+    .header-container {
+        font-size: 4vw;
+    }
+  }
+
+
+.intro-message-container {
+    padding: 15% 30%;
+    color: #4e0011;
+}
+
+.intro-author {
+    text-align: right;
+}
+
+.footer-container {
+    background-size: 100% 100%;
+    background-color: #8eb9ff;
+    color: #4e0011;
+    padding-top: 20vh;
+    padding-bottom: 20vh;
+    padding-left: 15vw;
+    border-top-left-radius: 30%;
+    border-top-right-radius: 30%;
+}
