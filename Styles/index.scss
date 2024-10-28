@@ -1,0 +1,250 @@
+$boxShadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 14px 0 rgba(0,0,0,0.19);
+
+@mixin form-style {
+    border: none;
+    border-radius: 15px;
+    box-shadow: $boxShadow;
+    border: 1px solid grey;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.body {
+    margin: 0;
+}
+
+.page-container {
+    max-width: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /*background: linear-gradient(to bottom, #4e0011, #8eb9ff);*/
+    /*margin-left: auto;
+    margin-left: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;*/
+}
+
+.header-container {
+    background-size: 100% 100%;
+    background-color: #4e0011;
+    background-image: url(/Resources/IMG_0319.jpg);
+    background-repeat: no-repeat;
+    background-blend-mode: multiply; /*takes the dark background color and lays on top "lighten" for lighter colors*/
+    color: #8eb9ff;
+    padding-top: 50vh;
+    padding-bottom: 50vh;
+    padding-left: 15vw;
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+    font-size: 2vw;
+}
+
+h1 {
+    padding-bottom: 4vh;
+}
+
+.status-button {
+    background-color: #8eb9ff;
+    color:#4e0011;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    /*&:hover {
+        background-color: #b6cffb;
+    } 
+    BECAUSE IT IS NOT A CLICKABLE BUTTON*/
+    text-align: left;
+}
+
+/*.status-button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }*/
+
+  @media screen and (max-width: 992px) {
+    .header-container {
+        font-size: 4vw;
+    }
+  }
+
+  .read-resume-button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .read-resume-button {
+    background-color: #4e0011;
+    color:#8eb9ff;
+    border: none;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    padding: 15px 40px;
+    &:hover {
+        background-color: #902124;
+    }
+    cursor: pointer;
+  }
+
+  .read-intromessage-button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .read-intromessage-button {
+    background-color: #8eb9ff;
+    color:#4e0011;
+    border: none;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    padding: 15px 40px;
+    &:hover {
+        background-color: #b6cffb;
+    }
+    cursor: pointer;
+  }
+
+
+.intro-message-container {
+    padding: 15% 30%;
+    color: #4e0011;
+}
+
+.intro-author {
+    text-align: right;
+}
+
+.footer-container {
+    background-size: 100% 100%;
+    background-color: #8eb9ff;
+    color: #4e0011;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    border-top-left-radius: 25%;
+    border-top-right-radius: 25%;
+}
+
+h2 {
+    padding-left: 15vw;
+}
+
+.flex-button-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding: 2vw;
+}
+
+.contact-info-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px; /* fix responsiveness*/
+    width: 25%;
+    border-radius: 25%;
+    background-color: #4e0011;
+    color:#8eb9ff;
+    border: none;
+    &:hover {
+        box-shadow: $boxShadow;
+        transition: all 0.5s;
+    }
+}
+
+@media screen and (max-width: 873px) {
+    .flex-button-container {
+      flex-direction: column;
+      align-items: center;
+    }
+    .contact-info-button {
+        width: 40%;
+        margin-bottom: 1vh;
+    }
+  }
+
+.contact-details {
+    font-size: medium;
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 630px) {
+    .contact-details {
+        font-size: small;
+    }
+  }
+
+  @media screen and (max-width: 540px) {
+    .contact-details {
+        font-size: x-small;
+    .contact-info-button {
+        width: 45%;
+    }}
+}
+
+.material-icons {
+    font-size: 36px;
+}
+
+.linkedin-icon {
+    font-size: 36px;
+}
+
+h3 {
+    padding-top: 5vh;
+    padding-left: 2vw;
+}
+
+.contact-form-container {
+    width: 100%;
+    padding: 0 2vw 5vw 2vw;
+}
+
+.form {
+    padding: 0 15px;
+}
+
+.form-name-email-container{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 1em;
+}
+
+.form-name {
+    @include form-style();
+    display: inline;
+    width: 49%;
+    padding: 15px 30px;
+}
+
+.form-email {
+    @include form-style();
+    display: inline;
+    width: 49%;
+    padding: 15px 30px;
+}
+
+.form-subject {
+    @include form-style();
+    width: 100%;
+    padding: 15px 30px;
+    margin-bottom: 1em;
+}
+
+.form-message {
+    @include form-style();
+    width: 100%;
+    padding: 15px 30px;
+    margin-bottom: 2em;
+}
+
+.submit-button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.send-message-button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+    background-color: #4e0011;
+    color: aliceblue;
+}
