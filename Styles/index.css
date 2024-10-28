@@ -104,7 +104,7 @@ h1 {
 .footer-container {
   background-size: 100% 100%;
   background-color: #8eb9ff;
-  color: #4e0011;
+  color: #6f1b1d;
   padding-top: 10vh;
   padding-bottom: 10vh;
   border-top-left-radius: 25%;
@@ -128,10 +128,10 @@ h2 {
   align-items: center;
   padding: 30px; /* fix responsiveness*/
   width: 25%;
-  border-radius: 25%;
-  background-color: #4e0011;
-  color: #8eb9ff;
-  border: none;
+  border-radius: 40px;
+  background-color: #902124;
+  color: #c2858c;
+  border: 2px solid #6f1b1d;
 }
 .contact-info-button:hover {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
@@ -243,6 +243,7 @@ h3 {
   padding: 15px 30px;
   border: none;
   border-radius: 15px;
-  background-color: #4e0011;
-  color: aliceblue;
+  background-color: #902124;
+  color: #c2858c;
+  font-weight: bold;
 }/*# sourceMappingURL=index.css.map */
