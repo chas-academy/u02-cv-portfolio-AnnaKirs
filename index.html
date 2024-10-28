@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV-Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/Styles/index.css">
 </head>
 <body class="html">
@@ -34,9 +36,35 @@
                 <div class="footer-container">
                     <h2>Contact</h2>
                     <div class="flex-button-container">
-                        <button type="button" class="phone-button" alt="contact-button"><i class="fa fa-home"></i>Phone nr.</button>
-                        <button type="button" class="email-button" alt="contact-email-button">Email</button>
-                        <button type="button" class="linkedin-button" alt="linkedin-profile-button">LinkedIn</button>
+                        <button type="button" class="phone-button" alt="contact-button" >
+                            <i class="material-icons">phone_iphone</i>
+                            <p class="phone-number">+46 7930 49 151</p>
+                            <p class="phone-text">Call Me</p>
+                        </button>
+                        <button type="button" class="email-button" alt="contact-email-button">
+                            <i class="material-icons">email</i>
+                            <p class="email">anna.kirs@chasacademy.se</p>
+                            <p class="email-text">Email Me</p>
+                        </button>
+                        <button type="button" class="linkedin-button" alt="linkedin-profile-button">
+                            <span class="linkedin-icon">
+                                <i class="fa fa-linkedin-square"></i>
+                            </span>
+                            <p class="linkedin">Anna Kirs</p>
+                            <p class="linkedin-text"> My LinkedIn Profile</p>
+                        </button>
+                    </div>
+                    <h3>Conctact Form</h3>
+                    <div>
+                        <div class="contact-form-container">
+                            <form action="thanks.html" method="post" autocomplete="on">
+                                <input type="text" class="form-name" name="your-name" value="Your Name*">
+                                <input type="text" class="form-email" name="your-email" value="Your Email*"><br>
+                                <input type="text" class="form-subject" name="your-subject" value="Your subject.."><br>
+                                <textarea class="form-message" name="your-message">Your message..</textarea><br>
+                                <button type="submit" class="send-message-button" alt="Click to Send Message">SEND</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </footer>
