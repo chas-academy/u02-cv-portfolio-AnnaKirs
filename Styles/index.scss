@@ -7,6 +7,18 @@ $boxShadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 14px 0 rgba(0,0,0,0.19);
     border: 1px solid grey;
 }
 
+@mixin see-experience-button-style {
+    border: none;
+    background-color: #8eb9ff00;
+    color: #4e0011;
+    align-content: left;
+    cursor: pointer;
+    &:hover {
+        color: #902124;
+        transition: all 0.5s;
+    }
+}
+
 * {
     box-sizing: border-box;
 }
@@ -26,17 +38,22 @@ $boxShadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 14px 0 rgba(0,0,0,0.19);
 }
 
 .header-container {
+    display: flex;
+    flex-direction: column;
     background-size: 100% 100%;
     background-color: #4e0011;
     background-image: url(/Resources/IMG_0319.jpg);
     background-repeat: no-repeat;
     background-blend-mode: multiply; /*takes the dark background color and lays on top "lighten" for lighter colors*/
+    border-bottom-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+.header-body-container {
     color: #8eb9ff;
     padding-top: 50vh;
     padding-bottom: 50vh;
     padding-left: 15vw;
-    border-bottom-left-radius: 25%;
-    border-bottom-right-radius: 25%;
     font-size: 2vw;
 }
 
@@ -70,64 +87,120 @@ h1 {
   .read-resume-button-container {
     display: flex;
     justify-content: center;
+    margin-bottom: 2vh;
   }
 
   .read-resume-button {
-    background-color: #4e0011;
+    background-color: #4e001128;
     color:#8eb9ff;
+    font-weight: bold;
     border: none;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
-    padding: 15px 40px;
+    border-radius: 15px;
+    padding: 15px 30px;
     &:hover {
         background-color: #902124;
+        box-shadow: $boxShadow;
+        transition: all 0.5s;
     }
     cursor: pointer;
   }
 
-  .read-intromessage-button-container {
+
+// .intro-message-container {
+//     padding: 15% 30%;
+//     color: #4e0011;
+// }
+
+// .intro-author {
+//     text-align: right;
+// }
+
+.resume-container {
     display: flex;
-    justify-content: center;
-  }
+    flex-direction: column;
+    max-width: 100%;
+    padding-top: 5vh;
+    padding-right: 25vw;
+    padding-bottom: 5vh;
+    padding-left: 8.5vw;
+}
 
-  .read-intromessage-button {
-    background-color: #8eb9ff;
-    color:#4e0011;
-    border: none;
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
-    padding: 15px 40px;
-    &:hover {
-        background-color: #b6cffb;
-    }
-    cursor: pointer;
-  }
-
-
-.intro-message-container {
-    padding: 15% 30%;
+.employment-container {
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #8eb9ff37;
+    border-radius: 15px;
+    margin-bottom: 2vh;
     color: #4e0011;
 }
 
-.intro-author {
-    text-align: right;
+.employment-table {
+    width: 100%;
+}
+
+th {
+    border-bottom: 1px solid #4e0011;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    text-align: left;
+}
+
+.experience-cell {
+    text-align: center;
+}
+
+td {
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+}
+
+.experience-button-container {
+    text-align: center;
+}
+
+.see-experience-button {
+    @include see-experience-button-style();
 }
 
 .footer-container {
     background-size: 100% 100%;
     background-color: #8eb9ff;
     color: #6f1b1d;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
 }
 
-h2 {
-    padding-left: 15vw;
+.read-intromessage-button-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .read-intromessage-button {
+    background-color: #8eb9ff;
+    color:#902124;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    padding: 15px 30px;
+    &:hover {
+        background-color: #c2858c;
+        box-shadow: $boxShadow;
+        transition: all 0.5s;
+    }
+    cursor: pointer;
+    margin-top: 2vh;
+  }
+
+.footer-body-container {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
 }
 
-.flex-button-container {
+h2 {
+    padding-left: 8.5vw;
+}
+
+.contact-info-button-container {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-evenly;
@@ -151,7 +224,7 @@ h2 {
 }
 
 @media screen and (max-width: 873px) {
-    .flex-button-container {
+    .contact-info-button-container {
       flex-direction: column;
       align-items: center;
     }
@@ -188,7 +261,7 @@ h2 {
     font-size: 36px;
 }
 
-h3 {
+.contact-form-heading {
     padding-top: 5vh;
     padding-left: 2vw;
 }
@@ -248,4 +321,8 @@ h3 {
     background-color: #902124;
     color: #c2858c;
     font-weight: bold;
+    &:hover {
+        box-shadow: $boxShadow;
+        transition: all 0.5s;
+    }
 }
