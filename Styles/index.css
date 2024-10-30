@@ -61,42 +61,21 @@ h1 {
     font-size: 4vw;
   }
 }
-.read-resume-button-container {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 2vh;
-}
-
-.read-resume-button {
-  background-color: rgba(78, 0, 17, 0.1568627451);
-  color: #8eb9ff;
-  font-weight: bold;
-  border: none;
-  border-radius: 15px;
-  padding: 15px 30px;
-  cursor: pointer;
-}
-.read-resume-button:hover {
-  background-color: #902124;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.5s;
-}
-
 .resume-container {
   display: flex;
   flex-direction: column;
   max-width: 100%;
-  padding-top: 5vh;
-  padding-right: 25vw;
-  padding-bottom: 5vh;
-  padding-left: 8.5vw;
 }
 
 .employment-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
   padding-left: 2vw;
   padding-right: 2vw;
   background-color: rgba(142, 185, 255, 0.2156862745);
   border-radius: 15px;
+  margin-top: 2vh;
   margin-bottom: 2vh;
   color: #4e0011;
 }
@@ -118,7 +97,7 @@ th {
 
 td {
   padding-top: 1vh;
-  padding-bottom: 1vh;
+  padding-bottom: 3vh;
 }
 
 .experience-button-container {
@@ -135,6 +114,83 @@ td {
 .see-experience-button:hover {
   color: #902124;
   transition: all 0.5s;
+}
+
+.technical-skills-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  padding-right: 2vw;
+  padding-bottom: 3vh;
+  padding-left: 2vw;
+  background-color: rgba(78, 0, 17, 0.1803921569);
+  border-radius: 15px;
+  color: #4e0011;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+h4 {
+  margin-top: 0;
+}
+
+.technical-skills-button-container {
+  display: flex;
+  padding-bottom: 1vh;
+  width: 50%;
+}
+
+.skills-button {
+  padding: 15px 30px;
+  margin-right: 0.5vw;
+  border: none;
+  border-radius: 15px;
+  background-color: #902124;
+  color: #c2858c;
+  font-weight: bold;
+}
+
+.education-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  background-color: rgba(142, 185, 255, 0.2156862745);
+  border-radius: 15px;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  color: #4e0011;
+}
+
+.personal-interests-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  padding-right: 2vw;
+  padding-bottom: 3vh;
+  padding-left: 2vw;
+  background-color: rgba(78, 0, 17, 0.1803921569);
+  border-radius: 15px;
+  color: #4e0011;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.personal-interests-button-container {
+  display: flex;
+  padding-bottom: 1vh;
+  width: 50%;
+}
+
+.interests-button {
+  padding: 15px 30px;
+  margin-right: 0.5vw;
+  border: none;
+  border-radius: 15px;
+  background-color: #902124;
+  color: #c2858c;
+  font-weight: bold;
 }
 
 .footer-container {

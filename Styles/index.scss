@@ -19,6 +19,54 @@ $boxShadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 14px 0 rgba(0,0,0,0.19);
     }
 }
 
+@mixin resume-table-style {
+    display: flex;
+    flex-direction: column;
+    max-width: 70%;
+    // justify-content: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    background-color: #8eb9ff37;
+    border-radius: 15px;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: #4e0011;
+}
+
+@mixin skills-interests-container-style {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    max-width: 70%;
+    padding-right: 2vw;
+    padding-bottom: 3vh;
+    padding-left: 2vw;
+    background-color: #4e00112e;
+    border-radius: 15px;
+    // margin-bottom: 2vh;
+    color: #4e0011;
+    width: 100%;
+    justify-content: flex-end; 
+    // text-align: end;
+}
+
+@mixin skills-interests-button-container-style {
+    display: flex;
+    // flex-direction: flex-end;
+    padding-bottom: 1vh;
+    width: 50%;
+}
+
+@mixin skills-interests-button-style {
+    padding: 15px 30px;
+    margin-right: 0.5vw;
+    border: none;
+    border-radius: 15px;
+    background-color: #902124;
+    color: #c2858c;
+    font-weight: bold;
+}
+
 * {
     box-sizing: border-box;
 }
@@ -84,26 +132,26 @@ h1 {
     }
   }
 
-  .read-resume-button-container {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2vh;
-  }
+//   .read-resume-button-container {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 2vh;
+//   }
 
-  .read-resume-button {
-    background-color: #4e001128;
-    color:#8eb9ff;
-    font-weight: bold;
-    border: none;
-    border-radius: 15px;
-    padding: 15px 30px;
-    &:hover {
-        background-color: #902124;
-        box-shadow: $boxShadow;
-        transition: all 0.5s;
-    }
-    cursor: pointer;
-  }
+//   .read-resume-button {
+//     background-color: #4e001128;
+//     color:#8eb9ff;
+//     font-weight: bold;
+//     border: none;
+//     border-radius: 15px;
+//     padding: 15px 30px;
+//     &:hover {
+//         background-color: #902124;
+//         box-shadow: $boxShadow;
+//         transition: all 0.5s;
+//     }
+//     cursor: pointer;
+//   }
 
 
 // .intro-message-container {
@@ -119,19 +167,14 @@ h1 {
     display: flex;
     flex-direction: column;
     max-width: 100%;
-    padding-top: 5vh;
-    padding-right: 25vw;
-    padding-bottom: 5vh;
-    padding-left: 8.5vw;
+    // padding-top: 5vh;
+    // padding-right: 40vw;
+    // padding-bottom: 5vh;
+    // padding-left: 6.5vw;
 }
 
 .employment-container {
-    padding-left: 2vw;
-    padding-right: 2vw;
-    background-color: #8eb9ff37;
-    border-radius: 15px;
-    margin-bottom: 2vh;
-    color: #4e0011;
+    @include resume-table-style();
 }
 
 .employment-table {
@@ -151,7 +194,7 @@ th {
 
 td {
     padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-bottom: 3vh;
 }
 
 .experience-button-container {
@@ -160,6 +203,38 @@ td {
 
 .see-experience-button {
     @include see-experience-button-style();
+}
+
+.technical-skills-container {
+    @include skills-interests-container-style();
+}
+
+h4 {
+    margin-top: 0;
+}
+
+.technical-skills-button-container {
+    @include skills-interests-button-container-style();
+}
+
+.skills-button {
+    @include skills-interests-button-style();
+}
+
+.education-container {
+    @include resume-table-style();
+}
+
+.personal-interests-container {
+    @include skills-interests-container-style();
+}
+
+.personal-interests-button-container {
+    @include skills-interests-button-container-style();
+}
+
+.interests-button {
+    @include skills-interests-button-style();
 }
 
 .footer-container {
@@ -175,7 +250,7 @@ td {
     justify-content: center;
   }
 
-  .read-intromessage-button {
+.read-intromessage-button {
     background-color: #8eb9ff;
     color:#902124;
     font-weight: bold;
