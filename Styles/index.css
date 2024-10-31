@@ -80,6 +80,11 @@ h1 {
   color: #4e0011;
 }
 
+@media screen and (max-width: 445px) {
+  .employment-container {
+    max-width: 100%;
+  }
+}
 .employment-table {
   width: 100%;
 }
@@ -100,6 +105,11 @@ td {
   padding-bottom: 3vh;
 }
 
+@media screen and (max-witdh: 445px) {
+  td {
+    font-size: x-small;
+  }
+}
 .experience-button-container {
   text-align: center;
 }
@@ -119,30 +129,38 @@ td {
 .technical-skills-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   max-width: 70%;
   padding-right: 2vw;
-  padding-bottom: 3vh;
+  padding-bottom: 2vh;
   padding-left: 2vw;
-  background-color: rgba(78, 0, 17, 0.1803921569);
+  background-color: rgba(133, 46, 65, 0.1803921569);
   border-radius: 15px;
   color: #4e0011;
   width: 100%;
   justify-content: flex-end;
 }
 
+@media screen and (max-width: 445px) {
+  .technical-skills-container {
+    max-width: 100%;
+  }
+}
 h4 {
   margin-top: 0;
 }
 
 .technical-skills-button-container {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 1vh;
-  width: 50%;
+  width: 100%;
 }
 
 .skills-button {
   padding: 15px 30px;
   margin-right: 0.5vw;
+  margin-bottom: 0.5vh;
   border: none;
   border-radius: 15px;
   background-color: #902124;
@@ -163,29 +181,43 @@ h4 {
   color: #4e0011;
 }
 
+@media screen and (max-width: 445px) {
+  .education-container {
+    max-width: 100%;
+  }
+}
 .personal-interests-container {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   max-width: 70%;
   padding-right: 2vw;
-  padding-bottom: 3vh;
+  padding-bottom: 2vh;
   padding-left: 2vw;
-  background-color: rgba(78, 0, 17, 0.1803921569);
+  background-color: rgba(133, 46, 65, 0.1803921569);
   border-radius: 15px;
   color: #4e0011;
   width: 100%;
   justify-content: flex-end;
+  margin-bottom: 2vh;
 }
 
+@media screen and (max-width: 445px) {
+  .personal-interests-container {
+    max-width: 100%;
+  }
+}
 .personal-interests-button-container {
   display: flex;
+  flex-wrap: wrap;
   padding-bottom: 1vh;
-  width: 50%;
+  width: 100%;
 }
 
 .interests-button {
   padding: 15px 30px;
   margin-right: 0.5vw;
+  margin-bottom: 0.5vh;
   border: none;
   border-radius: 15px;
   background-color: #902124;
@@ -199,27 +231,6 @@ h4 {
   color: #6f1b1d;
   border-top-left-radius: 25%;
   border-top-right-radius: 25%;
-}
-
-.read-intromessage-button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.read-intromessage-button {
-  background-color: #8eb9ff;
-  color: #902124;
-  font-weight: bold;
-  border: none;
-  border-radius: 15px;
-  padding: 15px 30px;
-  cursor: pointer;
-  margin-top: 2vh;
-}
-.read-intromessage-button:hover {
-  background-color: #c2858c;
-  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
-  transition: all 0.5s;
 }
 
 .footer-body-container {
@@ -297,7 +308,7 @@ h2 {
 
 .contact-form-container {
   width: 100%;
-  padding: 0 2vw 5vw 2vw;
+  padding: 0 2vw;
 }
 
 .form {

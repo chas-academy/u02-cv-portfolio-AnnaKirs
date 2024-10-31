@@ -36,12 +36,13 @@ $boxShadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 14px 0 rgba(0,0,0,0.19);
 @mixin skills-interests-container-style {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
     // justify-content: center;
     max-width: 70%;
     padding-right: 2vw;
-    padding-bottom: 3vh;
+    padding-bottom: 2vh;
     padding-left: 2vw;
-    background-color: #4e00112e;
+    background-color: #852e412e;
     border-radius: 15px;
     // margin-bottom: 2vh;
     color: #4e0011;
@@ -52,14 +53,16 @@ $boxShadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 14px 0 rgba(0,0,0,0.19);
 
 @mixin skills-interests-button-container-style {
     display: flex;
+    flex-wrap: wrap;
     // flex-direction: flex-end;
     padding-bottom: 1vh;
-    width: 50%;
+    width: 100%;
 }
 
 @mixin skills-interests-button-style {
     padding: 15px 30px;
     margin-right: 0.5vw;
+    margin-bottom: 0.5vh;
     border: none;
     border-radius: 15px;
     background-color: #902124;
@@ -177,6 +180,12 @@ h1 {
     @include resume-table-style();
 }
 
+@media screen and (max-width: 445px) {
+    .employment-container {
+        max-width: 100%;
+    }
+}
+
 .employment-table {
     width: 100%;
 }
@@ -197,6 +206,12 @@ td {
     padding-bottom: 3vh;
 }
 
+@media screen and (max-witdh:445px) {
+    td {
+      font-size: x-small;
+    }
+}
+
 .experience-button-container {
     text-align: center;
 }
@@ -207,6 +222,12 @@ td {
 
 .technical-skills-container {
     @include skills-interests-container-style();
+}
+
+@media screen and (max-width: 445px) {
+    .technical-skills-container {
+        max-width: 100%;
+    }
 }
 
 h4 {
@@ -225,8 +246,21 @@ h4 {
     @include resume-table-style();
 }
 
+@media screen and (max-width: 445px) {
+    .education-container {
+        max-width: 100%;
+    }
+}
+
 .personal-interests-container {
     @include skills-interests-container-style();
+    margin-bottom: 2vh;
+}
+
+@media screen and (max-width: 445px) {
+    .personal-interests-container {
+        max-width: 100%;
+    }
 }
 
 .personal-interests-button-container {
@@ -245,26 +279,26 @@ h4 {
     border-top-right-radius: 25%;
 }
 
-.read-intromessage-button-container {
-    display: flex;
-    justify-content: center;
-  }
+// .read-intromessage-button-container {
+//     display: flex;
+//     justify-content: center;
+//   }
 
-.read-intromessage-button {
-    background-color: #8eb9ff;
-    color:#902124;
-    font-weight: bold;
-    border: none;
-    border-radius: 15px;
-    padding: 15px 30px;
-    &:hover {
-        background-color: #c2858c;
-        box-shadow: $boxShadow;
-        transition: all 0.5s;
-    }
-    cursor: pointer;
-    margin-top: 2vh;
-  }
+// .read-intromessage-button {
+//     background-color: #8eb9ff;
+//     color:#902124;
+//     font-weight: bold;
+//     border: none;
+//     border-radius: 15px;
+//     padding: 15px 30px;
+//     &:hover {
+//         background-color: #c2858c;
+//         box-shadow: $boxShadow;
+//         transition: all 0.5s;
+//     }
+//     cursor: pointer;
+//     margin-top: 2vh;
+//   }
 
 .footer-body-container {
     padding-top: 10vh;
@@ -343,7 +377,7 @@ h2 {
 
 .contact-form-container {
     width: 100%;
-    padding: 0 2vw 5vw 2vw;
+    padding: 0 2vw;
 }
 
 .form {
