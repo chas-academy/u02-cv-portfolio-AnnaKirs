@@ -9,23 +9,31 @@
 .page-container {
   max-width: 100%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  /*background: linear-gradient(to bottom, #4e0011, #8eb9ff);*/
   /*margin-left: auto;
   margin-left: auto;
   padding-left: 1rem;
   padding-right: 1rem;*/
 }
 
+.header-background-container {
+  background-color: #4e0011;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
-  background-size: 100% 100%;
   background-color: #4e0011;
-  background-image: url(/Resources/IMG_0319.jpg);
   background-repeat: no-repeat;
-  background-blend-mode: multiply; /*takes the dark background color and lays on top "lighten" for lighter colors*/
+  background-size: cover;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 25%;
   border-bottom-right-radius: 25%;
+}
+
+.header-container img {
+  max-width: 40%;
+  max-height: 40%;
+  display: block;
 }
 
 .header-body-container {
@@ -65,12 +73,13 @@ h1 {
   display: flex;
   flex-direction: column;
   max-width: 100%;
+  align-items: center;
+  background: linear-gradient(to bottom, #4e0011, #e1bbc3, #cddefa, #8eb9ff);
 }
 
 .employment-container {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
   padding-left: 2vw;
   padding-right: 2vw;
   background-color: rgba(142, 185, 255, 0.2156862745);
@@ -78,6 +87,8 @@ h1 {
   margin-top: 2vh;
   margin-bottom: 2vh;
   color: #4e0011;
+  width: 100%;
+  max-width: 70%;
 }
 
 @media screen and (max-width: 445px) {
@@ -85,10 +96,6 @@ h1 {
     max-width: 100%;
   }
 }
-.employment-table {
-  width: 100%;
-}
-
 th {
   border-bottom: 1px solid #4e0011;
   padding-top: 1vh;
@@ -134,11 +141,10 @@ td {
   padding-right: 2vw;
   padding-bottom: 2vh;
   padding-left: 2vw;
-  background-color: rgba(133, 46, 65, 0.1803921569);
+  background-color: rgba(142, 185, 255, 0.2156862745);
   border-radius: 15px;
   color: #4e0011;
   width: 100%;
-  justify-content: flex-end;
 }
 
 @media screen and (max-width: 445px) {
@@ -171,7 +177,6 @@ h4 {
 .education-container {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
   padding-left: 2vw;
   padding-right: 2vw;
   background-color: rgba(142, 185, 255, 0.2156862745);
@@ -179,6 +184,8 @@ h4 {
   margin-top: 2vh;
   margin-bottom: 2vh;
   color: #4e0011;
+  width: 100%;
+  max-width: 70%;
 }
 
 @media screen and (max-width: 445px) {
@@ -194,11 +201,10 @@ h4 {
   padding-right: 2vw;
   padding-bottom: 2vh;
   padding-left: 2vw;
-  background-color: rgba(133, 46, 65, 0.1803921569);
+  background-color: rgba(142, 185, 255, 0.2156862745);
   border-radius: 15px;
   color: #4e0011;
   width: 100%;
-  justify-content: flex-end;
   margin-bottom: 2vh;
 }
 
@@ -225,9 +231,14 @@ h4 {
   font-weight: bold;
 }
 
+.footer-background-container {
+  background-color: #8eb9ff;
+}
+
 .footer-container {
   background-size: 100% 100%;
   background-color: #8eb9ff;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
   color: #6f1b1d;
   border-top-left-radius: 25%;
   border-top-right-radius: 25%;

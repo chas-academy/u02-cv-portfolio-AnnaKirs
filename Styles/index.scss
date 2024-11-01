@@ -22,33 +22,31 @@ $boxShadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 14px 0 rgba(0,0,0,0.19);
 @mixin resume-table-style {
     display: flex;
     flex-direction: column;
-    max-width: 70%;
-    // justify-content: center;
     padding-left: 2vw;
     padding-right: 2vw;
     background-color: #8eb9ff37;
+    // background-image: linear-gradient(#8eb9ff, #4e0011);
     border-radius: 15px;
     margin-top: 2vh;
     margin-bottom: 2vh;
     color: #4e0011;
+    width: 100%;
+    max-width: 70%;
 }
 
 @mixin skills-interests-container-style {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    // justify-content: center;
     max-width: 70%;
     padding-right: 2vw;
     padding-bottom: 2vh;
     padding-left: 2vw;
-    background-color: #852e412e;
+    background-color: #8eb9ff37;
     border-radius: 15px;
     // margin-bottom: 2vh;
     color: #4e0011;
     width: 100%;
-    justify-content: flex-end; 
-    // text-align: end;
 }
 
 @mixin skills-interests-button-container-style {
@@ -81,23 +79,33 @@ $boxShadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 14px 0 rgba(0,0,0,0.19);
 .page-container {
     max-width: 100%;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    /*background: linear-gradient(to bottom, #4e0011, #8eb9ff);*/
     /*margin-left: auto;
     margin-left: auto;
     padding-left: 1rem;
     padding-right: 1rem;*/
 }
 
+.header-background-container {
+    background-color: #4e0011;
+}
+
 .header-container {
     display: flex;
     flex-direction: column;
-    background-size: 100% 100%;
+    // background-size: 100% 100%;
     background-color: #4e0011;
-    background-image: url(/Resources/IMG_0319.jpg);
+    // background-image: url(/Resources/CV\ Pic.png);
     background-repeat: no-repeat;
-    background-blend-mode: multiply; /*takes the dark background color and lays on top "lighten" for lighter colors*/
+    background-size: cover;
+    box-shadow: $boxShadow;
     border-bottom-left-radius: 25%;
     border-bottom-right-radius: 25%;
+}
+
+.header-container img {
+    max-width: 40%;
+    max-height: 40%;
+    display: block;
 }
 
 .header-body-container {
@@ -170,6 +178,8 @@ h1 {
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    align-items: center;
+    background: linear-gradient(to bottom, #4e0011, #e1bbc3, #cddefa, #8eb9ff);
     // padding-top: 5vh;
     // padding-right: 40vw;
     // padding-bottom: 5vh;
@@ -187,7 +197,7 @@ h1 {
 }
 
 .employment-table {
-    width: 100%;
+    // width: 100%;
 }
 
 th {
@@ -271,9 +281,14 @@ h4 {
     @include skills-interests-button-style();
 }
 
+.footer-background-container {
+    background-color: #8eb9ff;
+}
+
 .footer-container {
     background-size: 100% 100%;
     background-color: #8eb9ff;
+    box-shadow: $boxShadow;
     color: #6f1b1d;
     border-top-left-radius: 25%;
     border-top-right-radius: 25%;
