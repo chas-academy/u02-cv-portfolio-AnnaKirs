@@ -110,14 +110,20 @@ $boxShadow: 0 5px 10px 0 rgba(0,0,0,0.24),0 10px 14px 0 rgba(0,0,0,0.19);
 
 .header-body-container {
     color: #8eb9ff;
-    padding-top: 50vh;
-    padding-bottom: 50vh;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
     padding-left: 15vw;
     font-size: 2vw;
 }
 
 h1 {
     padding-bottom: 4vh;
+    display: inline-block;
+}
+
+.profile-pic {
+    float: right;
+    padding-right: 15vw;
 }
 
 .status-button {
@@ -141,6 +147,26 @@ h1 {
     .header-container {
         font-size: 4vw;
     }
+  }
+
+  .header-footer-container {
+    padding-right: 15vw;
+    padding-bottom: 5vw;
+    padding-left: 15vw;
+    text-align: center;
+    color: #c2858c;
+    font-weight: 600;
+    line-height: 1.8;
+  }
+
+  @media screen and (max-width: 992px) {
+    p {
+        font-size: small;
+    }
+  }
+
+  .internship-inquiry {
+    color: #8eb9ff;
   }
 
 //   .read-resume-button-container {
@@ -320,7 +346,7 @@ h4 {
     padding-bottom: 10vh;
 }
 
-h2 {
+.contact-headline {
     padding-left: 8.5vw;
 }
 
