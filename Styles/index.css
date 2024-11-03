@@ -134,7 +134,7 @@
 
 @media screen and (max-width: 445px) {
   .employment-container {
-    max-width: 100%;
+    max-width: 95%;
   }
 }
 th {
@@ -154,6 +154,10 @@ td {
     font-size: x-small;
   }
 }
+li {
+  font-size: smaller;
+}
+
 .technical-skills-container {
   display: flex;
   flex-direction: column;
@@ -170,7 +174,7 @@ td {
 
 @media screen and (max-width: 445px) {
   .technical-skills-container {
-    max-width: 100%;
+    max-width: 95%;
   }
 }
 h4 {
@@ -211,7 +215,7 @@ h4 {
 
 @media screen and (max-width: 445px) {
   .education-container {
-    max-width: 100%;
+    max-width: 95%;
   }
 }
 .personal-interests-container {
@@ -231,7 +235,7 @@ h4 {
 
 @media screen and (max-width: 445px) {
   .personal-interests-container {
-    max-width: 100%;
+    max-width: 95%;
   }
 }
 .personal-interests-button-container {

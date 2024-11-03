@@ -221,7 +221,7 @@ $boxShadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
 
 @media screen and (max-width: 445px) {
 	.employment-container {
-		max-width: 100%;
+		max-width: 95%;
 	}
 }
 
@@ -243,13 +243,17 @@ td {
 	}
 }
 
+li {
+	font-size: smaller;
+}
+
 .technical-skills-container {
 	@include skills-interests-container-style();
 }
 
 @media screen and (max-width: 445px) {
 	.technical-skills-container {
-		max-width: 100%;
+		max-width: 95%;
 	}
 }
 
@@ -271,7 +275,7 @@ h4 {
 
 @media screen and (max-width: 445px) {
 	.education-container {
-		max-width: 100%;
+		max-width: 95%;
 	}
 }
 
@@ -282,7 +286,7 @@ h4 {
 
 @media screen and (max-width: 445px) {
 	.personal-interests-container {
-		max-width: 100%;
+		max-width: 95%;
 	}
 }
 
