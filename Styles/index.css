@@ -326,9 +326,14 @@ h4 {
   width: 40vw;
 }
 
-@media screen and (max-width: 440px) {
+@media screen and (max-width: 640px) {
+  .youtube-video-container {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
   .youtube-video {
-    max-width: auto;
+    width: 100%;
   }
 }
 .footer-background-container {
