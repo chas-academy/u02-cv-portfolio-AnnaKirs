@@ -16,12 +16,38 @@
   padding-bottom: 20px;
 }
 
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: rgba(194, 133, 140, 0.8431372549);
+}
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+  margin-top: 3vw;
+  width: 25%;
+  min-width: 200px;
+  border-radius: 25px;
+}
+
+.nav-item {
+  margin-left: 1vw;
+  margin-right: 1vw;
+  color: white;
+}
+
 .header-container {
   display: flex;
   flex-direction: column;
   background-color: #4e0011;
+  margin-bottom: 3vh;
   background-repeat: no-repeat;
-  background-size: cover;
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
   border-bottom-left-radius: 25%;
   border-bottom-right-radius: 25%;
@@ -80,16 +106,17 @@
   border: none;
   border-radius: 8px;
   padding: 12px 20px;
-  /*&:hover {
-         background-color: #b6cffb;
-     } 
-     BECAUSE IT IS NOT A CLICKABLE BUTTON*/
   text-align: left;
 }
 
 @media screen and (max-width: 918px) {
+  .header-body-container {
+    padding-top: 15vh;
+    padding-bottom: 10vh;
+  }
   .profile-pic-small-screen-container {
     display: flex;
+    margin-bottom: 5vh;
   }
   .profile-pic-big-screen {
     display: none;
@@ -107,14 +134,13 @@
   .status-button {
     max-width: -moz-fit-content;
     max-width: fit-content;
+    margin: auto;
   }
 }
-/*.status-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  }*/
 @media screen and (max-width: 992px) {
   .header-container {
     font-size: 4vw;
+    box-shadow: none;
   }
 }
 .introduction-container {
@@ -331,6 +357,9 @@ h4 {
   .contact-headline {
     font-size: larger;
   }
+  .footer-container {
+    box-shadow: none;
+  }
 }
 .contact-info-button-container {
   display: flex;
@@ -343,7 +372,7 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px; /* fix responsiveness*/
+  padding: 20px;
   width: 23%;
   border-radius: 40px;
   background-color: #902124;

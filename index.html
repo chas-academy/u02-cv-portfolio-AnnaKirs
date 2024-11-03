@@ -15,53 +15,56 @@
 		<link rel="stylesheet" href="/Styles/index.css" />
 	</head>
 	<body class="html">
-		<div class="CV">
-			<div id="gradient-background" class="page-container">
-				<div class="header-background-container">
-					<header class="header-container">
-						<div class="header-body-container">
-							<div class="profile-pic-small-screen-container">
-								<img
-									class="profile-pic-small-screen"
-									src="/Resources/Anna Kirs.jpg"
-									alt="Anna Kirs"
-								/>
-							</div>
-							<div class="title-column-container">
-								<div class="title-column">
-									<h1 class="title">ANNA KIRS</h1>
-									<button
-										type="button"
-										class="status-button"
-										alt="status-button"
-									>
-										Fullstack Developer <br />
-										/student
-									</button>
-									<div class="introduction-container">
-										<p class="introduction-paragraph">
-											First-year Fullstack Open Source Web Developer, due to
-											graduate in spring 2026.<br />
-											I am a person with a positive attitude and someone who is
-											also a quick learner and great at problem-solving. I
-											appreciate transparent and effective communication and
-											well-organized working environment.
-										</p>
-										<p class="internship-inquiry">
-											Looking for a 6-month internship for spring, 2026!
-										</p>
-									</div>
-								</div>
-							</div>
-
+		<div class="page-container">
+			<div class="header-background-container">
+				<div class="navbar-container">
+					<nav class="navbar">
+						<a class="nav-item" href="#home">HOME</a>
+						<a class="nav-item" href="#resume">RESUME</a>
+						<a class="nav-item" href="#contact">CONTACT</a>
+					</nav>
+				</div>
+				<header id="home" class="header-container">
+					<div class="header-body-container">
+						<div class="profile-pic-small-screen-container">
 							<img
-								class="profile-pic-big-screen"
+								class="profile-pic-small-screen"
 								src="/Resources/Anna Kirs.jpg"
 								alt="Anna Kirs"
 							/>
 						</div>
+						<div class="title-column-container">
+							<div class="title-column">
+								<h1 class="title">ANNA KIRS</h1>
+								<button type="button" class="status-button" alt="status-button">
+									Fullstack Developer <br />
+									/student
+								</button>
+								<div class="introduction-container">
+									<p class="introduction-paragraph">
+										First-year Fullstack Open Source Web Developer, due to
+										graduate in spring 2026.<br />
+										I am a person with a positive attitude and someone who is
+										also a quick learner and great at problem-solving. I
+										appreciate transparent and effective communication and
+										well-organized working environment.
+									</p>
+									<p class="internship-inquiry">
+										Looking for a 6-month internship for spring, 2026!
+									</p>
+								</div>
+							</div>
+						</div>
 
-				<div class="resume-container">
+						<img
+							class="profile-pic-big-screen"
+							src="/Resources/Anna Kirs.jpg"
+							alt="Anna Kirs"
+						/>
+					</div>
+				</header>
+
+				<div id="resume" class="resume-container">
 					<section class="employment-container">
 						<h3 class="employment-heading">Employment</h3>
 						<table class="employment-table">
@@ -261,7 +264,7 @@
 
 				<footer>
 					<div class="footer-background-container">
-						<div class="footer-container">
+						<div id="contact" class="footer-container">
 							<div class="footer-body-container">
 								<h2 class="contact-headline">CONTACT</h2>
 								<div class="contact-info-button-container">

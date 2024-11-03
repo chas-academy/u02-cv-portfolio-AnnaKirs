@@ -72,14 +72,39 @@ $boxShadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
 	padding-bottom: 20px;
 }
 
+.navbar-container {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	position: sticky;
+	top: 0;
+	background-color: #c2858cd7;
+}
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	padding-top: 2vw;
+	padding-bottom: 2vw;
+	margin-top: 3vw;
+	width: 25%;
+	min-width: 200px;
+	border-radius: 25px;
+}
+
+.nav-item {
+	margin-left: 1vw;
+	margin-right: 1vw;
+	color: white;
+}
+
 .header-container {
 	display: flex;
 	flex-direction: column;
-	// background-size: 100% 100%;
 	background-color: #4e0011;
-	// background-image: url(/Resources/CV\ Pic.png);
+	margin-bottom: 3vh;
 	background-repeat: no-repeat;
-	background-size: cover;
+
 	box-shadow: $boxShadow;
 	border-bottom-left-radius: 25%;
 	border-bottom-right-radius: 25%;
@@ -138,16 +163,17 @@ $boxShadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
 	border: none;
 	border-radius: 8px;
 	padding: 12px 20px;
-	/*&:hover {
-        background-color: #b6cffb;
-    } 
-    BECAUSE IT IS NOT A CLICKABLE BUTTON*/
 	text-align: left;
 }
 
 @media screen and (max-width: 918px) {
+	.header-body-container {
+		padding-top: 15vh;
+		padding-bottom: 10vh;
+	}
 	.profile-pic-small-screen-container {
 		display: flex;
+		margin-bottom: 5vh;
 	}
 	.profile-pic-big-screen {
 		display: none;
@@ -164,23 +190,18 @@ $boxShadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
 	}
 	.status-button {
 		max-width: fit-content;
+		margin: auto;
 	}
 }
-
-/*.status-button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  }*/
 
 @media screen and (max-width: 992px) {
 	.header-container {
 		font-size: 4vw;
+		box-shadow: none;
 	}
 }
 
 .introduction-container {
-	// padding-right: 15vw;
-	// padding-bottom: 5vw;
-	// padding-left: 15vw;
 	text-align: left;
 	color: #c2858c;
 	max-width: 100%;
@@ -197,12 +218,6 @@ $boxShadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
 	}
 }
 
-// @media screen and (max-width: 992px) {
-// 	h2 {
-// 		font-size: medium;
-// 	}
-// }
-
 @media screen and (max-width: 992px) {
 	p .introduction-paragraph {
 		font-size: small;
@@ -214,46 +229,12 @@ $boxShadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
 	font-size: medium;
 }
 
-//   .read-resume-button-container {
-//     display: flex;
-//     justify-content: center;
-//     margin-bottom: 2vh;
-//   }
-
-//   .read-resume-button {
-//     background-color: #4e001128;
-//     color:#8eb9ff;
-//     font-weight: bold;
-//     border: none;
-//     border-radius: 15px;
-//     padding: 15px 30px;
-//     &:hover {
-//         background-color: #902124;
-//         box-shadow: $boxShadow;
-//         transition: all 0.5s;
-//     }
-//     cursor: pointer;
-//   }
-
-// .intro-message-container {
-//     padding: 15% 30%;
-//     color: #4e0011;
-// }
-
-// .intro-author {
-//     text-align: right;
-// }
-
 .resume-container {
 	display: flex;
 	flex-direction: column;
 	max-width: 100%;
 	align-items: center;
 	background: linear-gradient(to bottom, #4e0011, #e1bbc3, #cddefa, #8eb9ff);
-	// padding-top: 5vh;
-	// padding-right: 40vw;
-	// padding-bottom: 5vh;
-	// padding-left: 6.5vw;
 }
 
 .employment-container {
@@ -369,40 +350,21 @@ h4 {
 	border-top-right-radius: 25%;
 }
 
-// .read-intromessage-button-container {
-//     display: flex;
-//     justify-content: center;
-//   }
-
-// .read-intromessage-button {
-//     background-color: #8eb9ff;
-//     color:#902124;
-//     font-weight: bold;
-//     border: none;
-//     border-radius: 15px;
-//     padding: 15px 30px;
-//     &:hover {
-//         background-color: #c2858c;
-//         box-shadow: $boxShadow;
-//         transition: all 0.5s;
-//     }
-//     cursor: pointer;
-//     margin-top: 2vh;
-//   }
-
 .footer-body-container {
 	padding-top: 10vh;
 	padding-bottom: 10vh;
 }
 
 .contact-headline {
-	// padding-left: 9vw;
 	text-align: center;
 }
 
 @media screen and (max-width: 992px) {
 	.contact-headline {
 		font-size: larger;
+	}
+	.footer-container {
+		box-shadow: none;
 	}
 }
 
@@ -417,7 +379,7 @@ h4 {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 20px; /* fix responsiveness*/
+	padding: 20px;
 	width: 23%;
 	border-radius: 40px;
 	background-color: #902124;
@@ -488,7 +450,6 @@ h4 {
 .contact-form-heading {
 	padding-top: 5vh;
 	padding-bottom: 5vh;
-	// padding-left: 9vw;
 	text-align: center;
 }
 
