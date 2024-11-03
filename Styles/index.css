@@ -10,13 +10,14 @@
   max-width: 100%;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
   /*margin-left: auto;
-  margin-left: auto;
-  padding-left: 1rem;
-  padding-right: 1rem;*/
+     margin-left: auto;
+     padding-left: 1rem;
+     padding-right: 1rem;*/
 }
 
 .header-background-container {
   background-color: #4e0011;
+  padding-bottom: 20px;
 }
 
 .header-container {
@@ -30,28 +31,39 @@
   border-bottom-right-radius: 25%;
 }
 
-.header-container img {
-  max-width: 40%;
-  max-height: 40%;
-  display: block;
-}
-
 .header-body-container {
   color: #8eb9ff;
   padding-top: 30vh;
   padding-bottom: 30vh;
   padding-left: 15vw;
+  padding-right: 15vw;
   font-size: 2vw;
+  height: 50vh;
 }
 
-h1 {
-  padding-bottom: 4vh;
+.title-column-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-column {
   display: inline-block;
 }
 
+.title {
+  margin-top: 0;
+}
+
+.image-column {
+  display: inline;
+}
+
 .profile-pic {
+  max-width: 40%;
+  max-height: 40%;
+  display: block;
   float: right;
-  padding-right: 15vw;
 }
 
 .status-button {
@@ -61,9 +73,9 @@ h1 {
   border-radius: 8px;
   padding: 12px 20px;
   /*&:hover {
-      background-color: #b6cffb;
-  } 
-  BECAUSE IT IS NOT A CLICKABLE BUTTON*/
+         background-color: #b6cffb;
+     } 
+     BECAUSE IT IS NOT A CLICKABLE BUTTON*/
   text-align: left;
 }
 
