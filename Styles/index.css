@@ -97,6 +97,11 @@
 }
 
 @media screen and (max-width: 992px) {
+  h2 {
+    font-size: medium;
+  }
+}
+@media screen and (max-width: 992px) {
   p {
     font-size: small;
   }
@@ -267,6 +272,16 @@ h4 {
   font-weight: bold;
 }
 
+.youtube-video-container {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+}
+
+.youtube-video {
+  height: 40vh;
+  width: 40vw;
+}
+
 .footer-background-container {
   background-color: #8eb9ff;
 }
@@ -286,13 +301,18 @@ h4 {
 }
 
 .contact-headline {
-  padding-left: 8.5vw;
+  text-align: center;
 }
 
+@media screen and (max-width: 992px) {
+  .contact-headline {
+    font-size: larger;
+  }
+}
 .contact-info-button-container {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-around;
   padding: 2vw;
 }
 
@@ -300,8 +320,8 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px; /* fix responsiveness*/
-  width: 25%;
+  padding: 20px; /* fix responsiveness*/
+  width: 23%;
   border-radius: 40px;
   background-color: #902124;
   color: #c2858c;
@@ -312,7 +332,7 @@ h4 {
   transition: all 0.5s;
 }
 
-@media screen and (max-width: 873px) {
+@media screen and (max-width: 917px) {
   .contact-info-button-container {
     flex-direction: column;
     align-items: center;
@@ -322,21 +342,21 @@ h4 {
     margin-bottom: 1vh;
   }
 }
-.contact-details {
+.contact-link {
   font-size: medium;
   text-decoration: underline;
 }
 
 @media screen and (max-width: 630px) {
-  .contact-details {
+  .contact-link {
     font-size: small;
   }
 }
 @media screen and (max-width: 540px) {
-  .contact-details {
+  .contact-link {
     font-size: x-small;
   }
-  .contact-details .contact-info-button {
+  .contact-link .contact-info-button {
     width: 45%;
   }
 }
@@ -344,13 +364,30 @@ h4 {
   font-size: 36px;
 }
 
-.linkedin-icon {
+.github-linkedin-icon {
   font-size: 36px;
 }
 
+.contact-link {
+  margin-top: 3vh;
+  margin-bottom: 1vh;
+  color: #c2858c;
+}
+
+.contact-text {
+  font-size: small;
+  text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+  .contact-text {
+    font-size: x-small;
+  }
+}
 .contact-form-heading {
   padding-top: 5vh;
-  padding-left: 2vw;
+  padding-bottom: 5vh;
+  text-align: center;
 }
 
 .contact-form-container {
