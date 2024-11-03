@@ -144,10 +144,6 @@ th {
   text-align: left;
 }
 
-.experience-cell {
-  text-align: center;
-}
-
 td {
   padding-top: 1vh;
   padding-bottom: 3vh;
@@ -158,22 +154,6 @@ td {
     font-size: x-small;
   }
 }
-.experience-button-container {
-  text-align: center;
-}
-
-.see-experience-button {
-  border: none;
-  background-color: rgba(142, 185, 255, 0);
-  color: #4e0011;
-  align-content: left;
-  cursor: pointer;
-}
-.see-experience-button:hover {
-  color: #902124;
-  transition: all 0.5s;
-}
-
 .technical-skills-container {
   display: flex;
   flex-direction: column;

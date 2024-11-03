@@ -7,18 +7,6 @@ $boxShadow: 0 5px 10px 0 rgba(0, 0, 0, 0.24), 0 10px 14px 0 rgba(0, 0, 0, 0.19);
 	border: 1px solid grey;
 }
 
-@mixin see-experience-button-style {
-	border: none;
-	background-color: #8eb9ff00;
-	color: #4e0011;
-	align-content: left;
-	cursor: pointer;
-	&:hover {
-		color: #902124;
-		transition: all 0.5s;
-	}
-}
-
 @mixin resume-table-style {
 	display: flex;
 	flex-direction: column;
@@ -244,10 +232,6 @@ th {
 	text-align: left;
 }
 
-.experience-cell {
-	text-align: center;
-}
-
 td {
 	padding-top: 1vh;
 	padding-bottom: 3vh;
@@ -257,14 +241,6 @@ td {
 	td {
 		font-size: x-small;
 	}
-}
-
-.experience-button-container {
-	text-align: center;
-}
-
-.see-experience-button {
-	@include see-experience-button-style();
 }
 
 .technical-skills-container {
